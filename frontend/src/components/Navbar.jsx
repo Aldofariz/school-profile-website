@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import logohasmul from "../assets/hasmulLogo.png"
 
 const Navbar = () => {
 
@@ -9,20 +9,20 @@ const Navbar = () => {
 
 
     const navLinks = [
-        {href: "#home", label: "Home"},
-        {href: "#about", label: "About Us"},
-        {href: "#academics", label: "Academics"},
-        {href: "#news", label: "News"},
-        {href: "#admission", label: "Admission"},
-        {href: "#contact", label: "Contact"},
+        {href: "/", label: "Home"},
+        {href: "about", label: "About Us"},
+        {href: "academics", label: "Academics"},
+        {href: "news", label: "News"},
+        {href: "admission", label: "Admission"},
+        {href: "contact", label: "Contact"},
     ]
 
     return (
         <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
             <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16">
                 {/* Logo */}
-                <div className="flex items-center gap-1 curson-pointer">
-                    <div className="w-4 h-4 bg-green-700 rounded-full opacity-75 hover:opacity-100 transition-opacity"></div>
+                <div className="flex items-center curson-pointer">
+                    <div className="h-4 font-semibold opacity-75 hover:opacity-100 transition-opacity">SLB Hasrat Mulia 2</div>
                 </div>
 
                 {/* Navigation */}
